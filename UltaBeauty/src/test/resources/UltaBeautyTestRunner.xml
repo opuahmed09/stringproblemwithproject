@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="UltaBeauty Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="Saucelabs"/>
+    <!--<parameter name="cloudEnvName" value="Browserstack"/>-->
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <!--<parameter name="browserName" value="firefox"/>-->
+    <parameter name="browserVersion" value="30"/>
+    <parameter name="url" value="https://www.ulta.com/"/>
+
+    <test name = "Ulta Beauty Test">
+        <classes>
+            <class name="testulta.UltaTestHomePage"/>
+            <class name="testulta.UltaTestMakeUpPage"/>
+            <class name="testulta.UltaTestSignUpPage"/>
+            <class name="testdatadriven.TestSearchWithDB"/>
+            <class name="testkeyworddriven.TestExcelExecutor"/>
+        </classes>
+    </test>
+
+</suite>

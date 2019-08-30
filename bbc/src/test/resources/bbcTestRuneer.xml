@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FaceBook Automation " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="30.0"/>
+    <parameter name="url" value="https://www.bbc.com/"/>
+
+    <test name = "BBC Home">
+
+        <classes>
+            <class name="test.TestBbcAccount"/>
+            <class name="test.TestBbcAddCart"/>
+            <class name="test.TestBbcArt"/>
+            <class name="test.TestBbcAustralia"/>
+            <class name="test.TestBbcCapital"/>
+            <class name="test.TestBbcCart"/>
+            <class name="test.TestBbcCricket"/>
+            <class name="test.TestBbcCulture"/>
+            <class name="test.TestBbcFootball"/>
+            <class name="test.TestBbcLibrary"/>
+            <class name="test.TestBbcLogin"/>
+            <class name="test.TestBbcMessi"/>
+            <class name="test.TestBbcNZReport"/>
+            <class name="test.TestBbcPhoto"/>
+            <class name="test.TestBbcReport"/>
+            <class name="test.TestBbcRonaldo"/>
+            <class name="test.TestBbcSearch"/>
+            <class name="test.TestBbcShoping"/>
+            <class name="test.TestBbcSports"/>
+            <class name="test.TestBbcUrlAssert"/>
+            <class name="test.TestBbcUSA"/>
+            <class name="test.TestBbcWeather"/>
+            <class name="test.TestBbcWeatherNY"/>
+            <class name="test.TestBbcYouTube"/>
+            <class name="test.TestHomeElement"/>
+            <class name="test.TestHomePage"/>
+            <class name="test.TestLoginAuthentication"/>
+            <class name="test.TestSearchApple"/>
+            <class name="test.TestTravel"/>
+        </classes>
+
+    </test>
+
+</suite>

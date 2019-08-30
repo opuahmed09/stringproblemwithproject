@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CNN Automation " parallel="false" >
+
+
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="saucelabs"/>
+        <parameter name="os" value="OS X"/>
+        <parameter name="os_version" value="Sierra"/>
+        <parameter name="browserName" value="chrome-options"/>
+
+        <!--<parameter name="browserName" value="firefox"/>-->
+        <parameter name="browserVersion" value="30.0"/>
+        <parameter name="url" value="https://www.cnn.com/"/>
+
+    <!--    <groups>-->
+    <!--        <run>-->
+    <!--            <include name="Cnn Home"/>-->
+    <!--            <include name="CNN Home 2"/>-->
+    <!--        </run>-->
+    <!--    </groups>-->
+
+        <test name = "CNN Home">
+            <classes>
+    <!--            <class name="testhompage.TestHomePage"/>-->
+<!--                <class name="testDBSearch.TestSearch"/>-->
+    <!--            <class name="testcnnbusiness.TestCnnBusinessPage"/>-->
+    <!--            <class name="testcnnuspage.TestCnnUsPage"/>-->
+    <!--            <class name="testcnnhealthpage.TestCnnHealth"/>-->
+    <!--            <class name="testcnnworld.TestCNNWorld"/>-->
+                <class name="testBrokenLinks.TestBrokenLinks"/>
+            </classes>
+        </test>
+
+
+<!--        <test name = "CNN Home 2">-->
+<!--            <classes>-->
+<!--                <class name="testhompage.TestHomePage"/>-->
+<!--                <class name="testDBSearch.TestSearch"/>-->
+<!--                <class name="testcnnbusiness.TestCnnBusinessPage"/>-->
+<!--                <class name="testcnnuspage.TestCnnUsPage"/>-->
+<!--                <class name="testcnnhealthpage.TestCnnHealth"/>-->
+<!--                <class name="testcnnworld.TestCNNWorld"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+
+</suite>
+
+
+
